@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Clicker+Script|Elsie+Swash+Caps:400,900')
+@import url('https://fonts.googleapis.com/css?family=Elsie+Swash+Caps:400,900');
+@import url('https://fonts.googleapis.com/css?family=Clicker+Script');
 /* This is a comment! */
 /* CSS Syntax:
   selector {
@@ -33,3 +34,30 @@ figcaption {
 }
 
 /* ID selectors (apply to one unique element per page) */
+#logo { /* select elements with the id="logo" */
+  background-color: aqua;
+}
+
+/* descedent selector */
+#logo h1 { /*selects the h1 inside of the id="logo" */
+  font-family: 'Clicker Script', cursive;
+}
+
+#logo h2 {
+  font-family: 'Elsie Swash Caps', cursive;
+}
+
+/* Pseudo Class Selectors */
+#details a:link, #details a:visited { /*the 'a:link' is the pseudo selector...  the first part is a descedent.  the coma makes it a compound selector */
+  color: #000;
+  text-decoration: none;
+}
+
+#details a:hover {
+  color: #000;
+  text-decoration: underline;
+}
+
+#details a:active {
+  color: red;
+}
